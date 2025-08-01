@@ -9,23 +9,25 @@ A complete eCommerce app built with **React.js**, offering **login authenticatio
 [**View Live Project**](https://your-username.github.io/nxt-trendz)
 
 ---
-
 ## 📸 Screenshots
 
 ### 🔐 Login Page  
-![Login](./screenshots/login.png)
+![Login](https://github.com/user-attachments/assets/2de0abe3-138c-4669-8b49-774c3542a7c2)
 
 ### 🏠 Home Page  
-![Home](./screenshots/home.png)
+![Home](https://github.com/user-attachments/assets/2104b786-9009-4f72-bfa5-16109f000317)
 
-### 🛍️ Products Listing  
-![Products](./screenshots/products.png)
+### 🛍️ Products Listing  page part 1 
+![Products](https://github.com/user-attachments/assets/2180bffd-296d-4c38-b821-56f0b6540e57)
+
+### 🛍️ Products Listing  page part 2
+![Products](https://github.com/user-attachments/assets/e7ea3430-a97e-45f8-a61b-63cc4ca80187)
 
 ### 📦 Product Details  
-![Product Details](./screenshots/product-details.png)
+![Product Details](https://github.com/user-attachments/assets/6f96112e-6e16-4c52-9e3a-59f29f534540)
 
 ### 🛒 Cart Page  
-![Cart](./screenshots/cart.png)
+![Cart](https://github.com/user-attachments/assets/a0941c79-43b2-4e0a-97da-48b3c156cd2a)
 
 ---
 
@@ -86,7 +88,6 @@ src/
 ├── AllProductsSection/
 └── ProtectedRoute/
 
-text
 
 ---
 
@@ -105,7 +106,6 @@ Start the development server
 npm start
 
 Visit http://localhost:3000 in your browser
-text
 
 ---
 
@@ -127,7 +127,6 @@ text
 "jwt_token": "your-token"
 }
 
-text
 
 ### 🟢 Products List API
 
@@ -152,17 +151,17 @@ text
 "deploy": "gh-pages -d build"
 }
 
-text
+
 
 2. **Install `gh-pages`:**
 npm install gh-pages --save-dev
 
-text
+
 
 3. **Deploy to GitHub Pages:**
 npm run deploy
 
-text
+
 
 ---
 
@@ -178,14 +177,6 @@ text
 
 ---
 
-## ⚠️ Developer Notes
-
-- Components **must** stay in `src/components/`
-- Folder names **must not** be changed
-- Use **only** the given mock APIs
-- Do not remove pre-filled template code
-
----
 
 ## 📄 License
 
