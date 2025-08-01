@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Nxtrendz/static/css/main.0dc3a4c9.chunk.css",
-    "main.js": "/Nxtrendz/static/js/main.e1a0cfbb.chunk.js",
-    "main.js.map": "/Nxtrendz/static/js/main.e1a0cfbb.chunk.js.map",
+    "main.css": "/Nxtrendz/static/css/main.6787cbc8.chunk.css",
+    "main.js": "/Nxtrendz/static/js/main.10c5353e.chunk.js",
+    "main.js.map": "/Nxtrendz/static/js/main.10c5353e.chunk.js.map",
     "runtime-main.js": "/Nxtrendz/static/js/runtime-main.24b87399.js",
     "runtime-main.js.map": "/Nxtrendz/static/js/runtime-main.24b87399.js.map",
-    "static/js/2.53ef9840.chunk.js": "/Nxtrendz/static/js/2.53ef9840.chunk.js",
-    "static/js/2.53ef9840.chunk.js.map": "/Nxtrendz/static/js/2.53ef9840.chunk.js.map",
+    "static/js/2.ddbb393f.chunk.js": "/Nxtrendz/static/js/2.ddbb393f.chunk.js",
+    "static/js/2.ddbb393f.chunk.js.map": "/Nxtrendz/static/js/2.ddbb393f.chunk.js.map",
     "index.html": "/Nxtrendz/index.html",
-    "static/css/main.0dc3a4c9.chunk.css.map": "/Nxtrendz/static/css/main.0dc3a4c9.chunk.css.map",
-    "static/js/2.53ef9840.chunk.js.LICENSE.txt": "/Nxtrendz/static/js/2.53ef9840.chunk.js.LICENSE.txt"
+    "static/css/main.6787cbc8.chunk.css.map": "/Nxtrendz/static/css/main.6787cbc8.chunk.css.map",
+    "static/js/2.ddbb393f.chunk.js.LICENSE.txt": "/Nxtrendz/static/js/2.ddbb393f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.24b87399.js",
-    "static/js/2.53ef9840.chunk.js",
-    "static/css/main.0dc3a4c9.chunk.css",
-    "static/js/main.e1a0cfbb.chunk.js"
+    "static/js/2.ddbb393f.chunk.js",
+    "static/css/main.6787cbc8.chunk.css",
+    "static/js/main.10c5353e.chunk.js"
   ]
 }
