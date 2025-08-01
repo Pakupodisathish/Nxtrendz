@@ -1,183 +1,206 @@
-In this project, let's build a **Nxt Trendz - Cart Features** by applying the concepts we have learned till now.
+# 🛍️ Nxt Trendz - Full Stack eCommerce App (React)
 
-### Refer to the video below:
+A complete eCommerce app built with **React.js**, offering **login authentication**, **protected routes**, **advanced product filters**, *detailed product pages*, and **cart functionality**.
 
-<br/>
-<div style="text-align: center;">
-  <video style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
+---
 
-### Design Files
+## 🔗 Live Demo
 
-<details>
-<summary>Click to view</summary>
+[**View Live Project**](https://your-username.github.io/nxt-trendz)
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-sm-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-lg-output.png)
+---
 
-</details>
+## 📸 Screenshots
 
-### Set Up Instructions
+### 🔐 Login Page  
+![Login](./screenshots/login.png)
 
-<details>
-<summary>Click to view</summary>
+### 🏠 Home Page  
+![Home](./screenshots/home.png)
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+### 🛍️ Products Listing  
+![Products](./screenshots/products.png)
 
-### Completion Instructions
+### 📦 Product Details  
+![Product Details](./screenshots/product-details.png)
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+### 🛒 Cart Page  
+![Cart](./screenshots/cart.png)
 
-The app must have the following functionalities
+---
 
-- When an unauthenticated user tries to access the **Cart** Route, then the page should be navigated to **Login** Route
+## 🚀 Features
 
-- Following are the features to be implemented
+### 🔒 Authentication & Protected Routes
+- Login with `username` and `password`
+- JWT saved in cookies for session management
+- Routes `/`, `/products`, `/products/:id`, and `/cart` are protected
+- Unauthorized users redirected to `/login`
 
-  - Feature 1
+### 🧰 Product Filters Group
+- Filter products by:  
+  - Category  
+  - Rating  
+  - Search input
+- Loader and error UI
+- “No Products Found” message for empty results
 
-    - When an authenticated user tries to add the same product multiple times
-      - The quantity of the product should be updated accordingly, and the count of the cart items in the header should be remained same
+### 📦 Product Details Page
+- Dynamic route `/products/:id`
+- Quantity counter (increment/decrement)
+- Similar Products section
+- Retry on API failure
 
-  - Feature 2
+### 🛒 Cart
+- Add / Remove / Update product quantity
+- Total order summary
 
-    - The total amount and number of items in the cart should be displayed in the **Cart** Route
+---
 
-  - Feature 3
+## 🛠️ Tech Stack
 
-    - In each cart item in the cart
-      - When the plus icon is clicked, then the quantity of the product should be incremented by one
-      - When the minus icon is clicked, then the quantity of the product should be decremented by one
-      - When the quantity of the product is one and the minus icon is clicked, then the respective product should be removed from the cart
-      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost should be updated accordingly
+- React.js
+- React Router DOM
+- JavaScript (ES6+)
+- CSS3
+- js-cookie
+- React Icons
+- React Context API
 
-  - Feature 4
+---
 
-    - When an authenticated user clicks on the remove button, cart item should be removed from the cart list
+## 📁 Folder Structure
 
-  - Feature 5
+src/
+├── App.js
+├── index.js
+└── components/
+├── LoginForm/
+├── Home/
+├── Products/
+├── Cart/
+├── ProductCard/
+├── ProductItemDetails/
+├── SimilarProductItem/
+├── FiltersGroup/
+├── AllProductsSection/
+└── ProtectedRoute/
 
-    - When an authenticated user clicks on the **Remove All** button, all the cart items should be removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) should be displayed
+text
 
-- The `CartContext` has an object as a value with the following properties
-  - `cartList` - this key stores the cart items
-  - `removeAllCartItems` - this method is used to remove all the cart items in the `cartList`
-  - `addCartItem` - this method adds the cart item to the `cartList`
-  - `removeCartItem` - this method removes the cart item from the `cartList`
-  - `incrementCartItemQuantity` - this method increases the quantity of a product in the `cartList`
-  - `decrementCartItemQuantity` - this method decreases the quantity of a product in the `cartList`
+---
 
-</details>
+## 🔧 Getting Started
 
-<details>
-<summary>Components Structure</summary>
+### ✅ Installation
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-component-structure-breakdown.png" alt="component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+Clone the repository
+git clone https://github.com/your-username/nxt-trendz.git
+cd nxt-trendz
 
-</details>
+Install dependencies
+npm install
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+Start the development server
+npm start
 
-Use these files to complete the implementation:
+Visit http://localhost:3000 in your browser
+text
 
-- `src/App.js`
-- `src/components/Cart/index.js`
-- `src/components/Cart/index.css`
-- `src/components/CartItem/index.js`
-- `src/components/CartItem/index.css`
-- `src/components/CartSummary/index.js`
-- `src/components/CartSummary/index.css`
-</details>
+---
 
-### Quick Tips
+## 🔐 API Endpoints
 
-<details>
-<summary>Click to view</summary>
-<br>
+### 🟢 Login API
 
-- The `line-height` CSS property sets the height of a line box. It's commonly used to set the distance between lines of text
+- **URL:** `https://apis.ccbp.in/login`  
+- **Method:** `POST`
+- **Request Body:**
+{
+"username": "rahul",
+"password": "rahul@2021"
+}
 
-  ```
-  line-height: 1.5;
-  ```
+text
+- **Response:**
+{
+"jwt_token": "your-token"
+}
 
-    <br/>
-    <img src="https://assets.ccbp.in/frontend/react-js/line-height-img.png" alt="line height" style="width:90%; max-width: 600px;"/>
+text
 
-- The array method `find()` returns the first item's value that satisfies the provided testing function. If no item is found, it returns `undefined`
+### 🟢 Products List API
 
-  **Syntax**: `arr.find(Testing Function)`
+- **URL:** `https://apis.ccbp.in/products`
+- **Method:** `GET`
+- **Query Params:** `title_search`, `category`, `rating`
 
-</details>
+### 🟢 Product Details API
 
-### Important Note
+- **URL:** `https://apis.ccbp.in/products/:id`
+- **Method:** `GET`
+- **Headers:** JWT token (from cookie)
 
-<details>
-<summary>Click to view</summary>
+---
 
-<br/>
+## 📦 GitHub Pages Deployment
 
-**The following instructions are required for the tests to pass**
+1. **Update `package.json`:**
+"homepage": "https://your-username.github.io/nxt-trendz",
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
 
-- `BsPlusSquare`, `BsDashSquare` icons from `react-icons` should be used for **plus** and **minus** buttons in cart item
-- The Cart Item should consist of two HTML button elements with data-testid attribute values as **plus** and **minus** respectively
-- `AiFillCloseCircle` icon from react-icons should be used for **remove** button in cartItem
-- The Cart Item should consist of an HTML button element with data-testid attribute values as **remove**
-- The product image in **Cart Item** Route should have the alt as `title` of the product
+text
 
-- Prime User credentials
+2. **Install `gh-pages`:**
+npm install gh-pages --save-dev
 
-  ```text
-   username: rahul
-   password: rahul@2021
-  ```
+text
 
-- Non-Prime User credentials
+3. **Deploy to GitHub Pages:**
+npm run deploy
 
-  ```text
-   username: raja
-   password: raja@2021
-  ```
+text
 
-</details>
+---
 
-### Resources
+## 👤 Test User Credentials
 
-<details>
-<summary>Colors</summary>
+### ✅ Prime User  
+- **Username:** `rahul`  
+- **Password:** `rahul@2021`
 
-<br/>
+### ❌ Non-Prime User  
+- **Username:** `raja`  
+- **Password:** `raja@2021`
 
-<div style="background-color: #0b69ff; width: 150px; padding: 10px; color: white">Hex: #0b69ff</div>
-<div style="background-color: #171f46; width: 150px; padding: 10px; color: white">Hex: #171f46</div>
-<div style="background-color: #616e7c; width: 150px; padding: 10px; color: white">Hex: #616e7c</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
+---
 
-</details>
+## ⚠️ Developer Notes
 
-<details>
-<summary>Font-families</summary>
+- Components **must** stay in `src/components/`
+- Folder names **must not** be changed
+- Use **only** the given mock APIs
+- Do not remove pre-filled template code
 
-- Roboto
+---
 
-</details>
+## 📄 License
 
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
+This project is licensed under the [MIT License](./LICENSE).
+
+---
+
+## 🙌 Acknowledgements
+
+Built as part of the NxtWave CCBP 4.0 Full Stack Developer program.  
+Uses CCBP public APIs for learning and demo purposes.
+
+---
+
+## ✨ Author
+
+pakupodi sathish
+GitHub: [@pakupodisathish](https://github.com/pakupodisathish)
