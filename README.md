@@ -6,7 +6,7 @@ A complete eCommerce app built with **React.js**, offering **login authenticatio
 
 ## 🔗 Live Demo
 
-[**View Live Project**](https://your-username.github.io/nxt-trendz)
+[**View Live Project**](https://pakupodisathish.github.io/Nxtrendz/)
 
 ---
 ## 📸 Screenshots
